@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Billu :)</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="shortcut icon" href="http://www.sawinfotech.com/favicon.ico" type="image/x-icon" />
+
+    <script  type="text/javascript">
+        function checkpassword() {
+            if (document.getElementById("password").value === "password") {
+                document.getElementById("first").style.display = "None";
+                document.getElementById("second").style.display = "Block";
+            }
+            else {
+                alert("Incorrect password.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <table class="Global" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td colspan="2" height="150" style="background: #ffffff;">
+                <table class="Header" style="height: 150px;" cellspacing="0" border="0">
+                    <tr>
+                        <td style="background: url('/images/logo.jpg') no-repeat;" width="100%" valign="baseline"
+                            align="right">
+                            
+                            <table width="100%" border="0" style="margin: 120px 0 0 0;">
+                                <tr>
+                                    <td>&nbsp;</td> 
+                                    <td valign="top">&nbsp;
+                                        
+                                    </td>                           
+                                </tr>                            
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="3" width="10" 
+            style="background: url('/images/faderight-bg.gif') #808080;">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>            
+            <td class="Content" colspan="2" >
+                <div>
+                    <br /><br /><br /><br />
+                    <div id="first" style="display: none">
+                        Enter your password here: 
+                        <input type="text" id="password" />
+                        <input type="button" onclick="return checkpassword();" value="Submit" />
+                    </div>
+                    <div id="second" style="display:block;">
+                     <center>
+                        <video width="500" height="450" controls=controls>
+                            <source src="video.mp4" type="video/mp4" /> 
+                            Your browser does not support the video tag.
+                        </video>
+                        <br/><b><i>Just Play</i></b>
+                    </center>
+                     
+                     </div>
+                     <br /><br /><br /><br />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"  style="height: 25px; background-color:#5A7F9C; vertical-align: middle; text-align: center;">
+                <p>
+                    Copyright &copy; sawinfotech.com &nbsp;&nbsp;|&nbsp;
+                    <a href="Disclaimer.aspx" style="color:Black;">Terms of Use</a>&nbsp;|&nbsp;
+                    <a href="Privacy.aspx" style="color:Black;">Privacy Policy</a>&nbsp;|&nbsp;
+                    <a href="SiteMap.aspx" style="color:Black;">SiteMap</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

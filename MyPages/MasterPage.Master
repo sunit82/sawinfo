@@ -1,0 +1,90 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MyPages.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head id="Head1" runat="server">
+    <title>SAWINFO</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="shortcut icon" href="http://www.sawinfotech.com/favicon.ico" type="image/x-icon" />
+    <script language="javascript" type="text/javascript">
+        Url = function() { }
+
+        Url.prototype =
+        {
+            _relativeRoot: '<%= ResolveUrl("~/") %>',
+
+            resolve: function(relative) {
+                var resolved = relative;
+                if (relative.charAt(0) == '~') resolved = this._relativeRoot + relative.substring(2);
+                return resolved;
+            }
+        }
+
+                $Url = new Url();
+    </script>
+    <script type="text/javascript" language="javascript" src="/js/MyScripts.js" ></script>
+
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <table class="Global" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td colspan="2" height="150" style="background: #ffffff;">
+                <table class="Header" style="height: 150px;" cellspacing="0" border="0">
+                    <tr>
+                        <td style=<%= WriteLogURl %> width="100%" valign="baseline"
+                            align="right">
+                            
+                            <table width="100%" border="0" style="margin: 120px 0 0 0;">
+                                <tr>
+                                    <td>&nbsp;</td> 
+                                    <td valign="top">&nbsp;
+                                        <!-- ***** This is the section of code you need to paste into your web pages ***** -->
+                                        <script type="text/javascript" src="<%= ResolvePath %>js/milonic_src.js"></script>	
+                                        <script type="text/javascript" src="<%= ResolvePath %>js/mmenudom.js"></script>
+                                        <noscript><a href=http://www.sawinfotech.com/> JavaScript Menu is only visible when JavaScript is enabled</a></noscript>
+                                        <!-- The next file contains your menu data, links and menu structure etc -->
+                                        <script type="text/javascript" src="<%= ResolvePath %>js/menu_data.js"></script>	
+                                        <!-- **** JavaScript Menu HTML Code -->
+                                    </td>                           
+                                </tr>                            
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="3" width="10" 
+            style=<%=  @"""background: url('" + ResolvePath + @"images/faderight-bg.gif') #808080;""" %>>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>            
+            <td class="Content" colspan="2" >
+                <div>
+                    <asp:Label ID="lblMasterMessage" runat="server" Text="" ForeColor="Red"></asp:Label>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                       
+                    </asp:ContentPlaceHolder>
+                    <div style="display:none;">
+                        <a href="http://www.milonic.com">DHTML Menu By Milonic JavaScript</a>
+                    </div>
+                    
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"  style="height: 25px; background-color:#5A7F9C; vertical-align: middle; text-align: center;">
+                <p>
+                    Copyright &copy; sawinfotech.com &nbsp;&nbsp;|&nbsp;
+                    <a href='<%= Page.ResolveUrl("~/Disclaimer.aspx")%>' style="color:Black;">Terms of Use1</a>&nbsp;|&nbsp;
+                    <a href='<%= Page.ResolveUrl("~/Privacy.aspx")%>' style="color:Black;">Privacy Policy</a>&nbsp;|&nbsp;
+                    <a href='<%= Page.ResolveUrl("~/SiteMap.aspx")%>' style="color:Black;">SiteMap</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

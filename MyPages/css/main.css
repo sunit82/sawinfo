@@ -1,0 +1,260 @@
+BODY {
+MARGIN: 0px; 
+PADDING: 0px;
+BACKGROUND: #b3bac1;
+COLOR: #000000;
+
+} 
+
+A:link {background: none; color: maroon; text-decoration: underline; cursor: pointer;}
+A:visited {background: none; color: maroon; text-decoration: underline; cursor: pointer;}
+A:hover {background: none; color: red; text-decoration: underline; cursor: pointer;}
+A:active { background: none; color: red; background: underline; cursor: pointer;}
+
+.Global {
+WIDTH: 760px;
+HEIGHT: 100%;
+MARGIN-LEFT: auto;
+MARGIN-RIGHT: auto;
+}
+
+.Global TD {
+VERTICAL-ALIGN: top;
+}
+
+.Header {
+WIDTH: 100%;
+}
+
+.Header TD {
+VERTICAL-ALIGN: top;
+TEXT-ALIGN: left;
+PADDING: 0px 0px 0px 0px; 
+}
+
+.Left {
+BACKGROUND: #ffffff;
+COLOR: inherit;
+}
+
+.Content {
+BACKGROUND: #ffffff;
+COLOR: inherit;
+}
+
+.BoxStyle {
+WIDTH: 100%;
+MARGIN-BOTTOM: 15px;
+}
+
+.MenuOff {
+	BACKGROUND: #97afc4; 
+	COLOR: #97afc4; 
+	CURSOR: hand; 
+	TEXT-DECORATION: none;
+	BORDER-LEFT: 1px solid #dde4ec;
+	BORDER-TOP: 1px solid #dde4ec;
+	BORDER-RIGHT: 1px solid #2e4054;
+	BORDER-BOTTOM: 1px solid #2e4054;
+	WIDTH: 100%;
+	HEIGHT: 16px;
+	PADDING-LEFT: 10px;
+	TEXT-ALIGN: left; 
+	LINE-HEIGHT: 14px;
+	FONT: bold 11px Arial,Helvetica,sans-serif;
+}
+
+.MenuOn {
+	BACKGROUND: #bad2ed;
+	COLOR: #452f59; 
+	CURSOR: hand; 
+	TEXT-DECORATION: none;
+	BORDER-LEFT: 1px solid #dde4ec;
+	BORDER-TOP: 1px solid #dde4ec;
+	BORDER-RIGHT: 1px solid #2e4054;
+	BORDER-BOTTOM: 1px solid #2e4054;
+	WIDTH: 100%;
+	HEIGHT: 16px;
+	PADDING-LEFT: 10px;
+	TEXT-ALIGN: left; 
+	LINE-HEIGHT: 14px;
+	FONT: bold 11px arial,Helvetica,sans-serif;
+}
+
+.MenuClick {
+	BACKGROUND: #bad2ed;
+	COLOR: #000000;
+	CURSOR: hand; 
+	TEXT-DECORATION: none;
+	BORDER-LEFT: 1px solid #2e4054;
+	BORDER-TOP: 1px solid #2e4054;
+	BORDER-RIGHT: 1px solid #dde4ec;
+	BORDER-BOTTOM: 1px solid #dde4ec;
+	WIDTH: 100%;
+	HEIGHT: 16px;
+	PADDING-LEFT: 10px;
+	TEXT-ALIGN: left; 
+	LINE-HEIGHT: 14px;
+	FONT: bold 11px Arial,Helvetica,sans-serif;
+}
+
+.MenuOff A:link { color: #395164; text-decoration: none; CURSOR: hand;}
+.MenuOff A:visited { color: #395164; text-decoration: none; CURSOR: hand;}
+.MenuOff A:hover {color: #395164; text-decoration: none; CURSOR: hand;}
+
+.MenuOn A:link { color: #000000; text-decoration: none; CURSOR: hand;}
+.MenuOn A:visited { color: #000000; text-decoration: none; CURSOR: hand;}
+.MenuOn A:hover {color: #000000; text-decoration: none; CURSOR: hand;}
+
+.MenuClick A:link { color: #000000; text-decoration: none; CURSOR: hand;}
+.MenuClick A:visited { color: #000000; text-decoration: none; CURSOR: hand;}
+.MenuClick A:hover {color: #000000; text-decoration: none; CURSOR: hand;}
+
+.HeadingStyle {
+BACKGROUND: none;
+COLOR: #000000;
+FONT: bold 20px arial,sans-serif;
+}
+
+P {
+FONT: 13px arial,sans-serif;
+}
+
+.Padded {
+PADDING: 15px 15px 15px 30px;
+}
+
+.SmallFont {
+FONT: 13px arial,sans-serif;
+}
+
+.MedFontBold {
+FONT: bold 15px arial,sans-serif;
+}
+
+.SmallFont TD {
+FONT: 13px arial,sans-serif;
+}
+
+.MedFontBold TD {
+FONT: bold 15px arial,sans-serif;
+}
+
+.Footer {
+WIDTH: 100%;
+BACKGROUND: none;
+COLOR: #000000;
+FONT: 13px arial,sans-serif;
+HEIGHT: 27px;
+TEXT-ALIGN: center;
+}
+
+.container 
+{
+	background:#ccc; 
+	color:#fff; 
+	margin:5px 10px 0 5px; 
+	width:200px;
+}
+.imgvwercontainer {background:#ccc; color:#fff; margin:0 10px 0 10px; width:450px;}
+
+.rtop, .rbottom{
+display:block;
+background:#fff;
+}
+.rtop *, .rbottom *{
+display: block;
+height: 1px;
+overflow: hidden;
+background:#ccc;
+}
+.r1{margin: 0 5px}
+.r2{margin: 0 3px}
+.r3{margin: 0 2px}
+.r4{margin: 0 1px;height: 2px}
+
+.imglink
+{
+    border:0px none #ffffff;
+    color:#ffffff;
+}
+.container a:hover
+{
+    color:#000000;
+}
+.SocialLinks
+{
+	text-decoration:none;
+	color:Black;
+}
+#ContentTypeTabs
+{
+    width: 60%;
+    line-height: 1.6;
+    display: inline;
+}        
+#ContentTypeTabs ul
+{
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;
+    list-style:none;
+}
+#ContentTypeTabs li
+{
+    float:left;
+    height: 21px;
+    color:Black;
+    background-color:#F1F1F1;
+    margin: 2px 2px 0 2px;
+    border-top: 1px solid #E3E3E3;
+    border-left: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    padding:5px 10px 0 10px;
+    font-weight:bold;       
+}
+#ContentTypeTabs a
+{
+    display: block;           
+    text-decoration:none;
+    font-weight:bold;
+    color:#555;
+}
+#ContentTypeTabs a:hover
+{
+   color:#000;
+}
+#ContentTypeTabs #current 
+{
+   background-color:#9FB0BE;
+   border-top: 1px solid #B2D4F9;
+   border-left: 1px solid #B2D4F9;
+   border-right: 1px solid #B2D4F9;
+}
+#ContentTypeTabs #current a
+{
+   color:#2C3381;           
+}
+#ContentTypeTabs #current a:hover
+{
+   color:#2D35BE;           
+}
+
+.TechH a
+{
+	padding:0 0 0 20px;
+	color:Black;
+}
+.TechBullet a
+{
+	color:Black;	
+}
+.style1 {
+	color: #1C8ACA;
+	font-weight: bold;
+	padding-left:20px;
+}
+.style2 {
+	color: #1C8ACA;
+	font-weight: bold;
+}

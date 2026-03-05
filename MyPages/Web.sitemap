@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="sawinfotech.com"  description="Home">
+    <siteMapNode title="SAWINFO"  description="sawinfo" >
+      <siteMapNode url="~/SAWINFO/Profile.aspx" title="Profile"  description="Profile" />
+      <siteMapNode url="~/SAWINFO/Photos.aspx" title="Photos"  description="Photos" />
+      <siteMapNode url="~/SAWINFO/Videos.aspx" title="Videos"  description="Videos" />
+      <siteMapNode url="~/SAWINFO/Technovations.aspx" title="Technovations"  description="Technovations" />
+
+    </siteMapNode>
+    <siteMapNode title="Applications"  description="sawinfo" >
+      <siteMapNode title="SAWManager"  description="sawmanager" />
+      <siteMapNode title="SAWWiki"  description="sawwiki" />
+      <siteMapNode title="Waingankars"  description="waingankars" />
+      <siteMapNode title="cPanel"  description="control panel" />
+
+    </siteMapNode>
+    <siteMapNode url="~/Contact.aspx" title="Contact"  description="Contact Us" />
+    <siteMapNode url="~/Privacy.aspx" title="Privacy Policy"  description="privacy policy" />
+    <siteMapNode url="~/Disclaimer.aspx" title="Terms of Use"  description="terms of use" />
+    <siteMapNode url="~/SiteMap.aspx" title="Site Map"  description="site map" />
+
+  </siteMapNode>
+</siteMap>

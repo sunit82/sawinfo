@@ -1,0 +1,10 @@
+# Build Output
+MyPages/bin/
+MyPages/obj/
+
+# Deployment Assemblies
+MyPages/_bin_deployableAssemblies/
+
+# Publish Profiles
+MyPages/Properties/PublishProfiles/
+MyPages/.vs/
